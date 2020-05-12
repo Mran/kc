@@ -49,7 +49,7 @@
 
 
   function GetInfo(str='') {
-    Swal.fire({
+    swal.fire({
       title: '请输入提取码',
       input: 'textarea',
       inputValue: str,
@@ -77,7 +77,7 @@
   function Process(){
     dir = GM_getValue('last_dir');
     if(!dir){dir = '';}
-    Swal.fire({
+    swal.fire({
       title: '请输入保存路径',
       input: 'text',
       inputPlaceholder: '格式示例：/GTA5/，默认保存在根目录',
